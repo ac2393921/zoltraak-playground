@@ -1,0 +1,26 @@
+[project]
+name = "zoltraak-playground"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "ac2393921", email = "ac2393921@gmail.com" }
+]
+dependencies = [
+    "zoltraak>=0.1.18",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/zoltraak_playground"]
